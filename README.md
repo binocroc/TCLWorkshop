@@ -22,19 +22,19 @@ Sub-Task: Create a command (vsdsynth) and pass .csv file from UNIX Shell to TCL 
 2. Creating the Logo and if-else cases for each of three types of arguements:
    - LOGO:
      
-   ![logo](https://github.com/binocroc/TCLWorkshop/assets/59701387/4810cbb8-61cf-400f-8e6f-f786b39d0e47)
+   ![logo](https://github.com/binocroc/TCLWorkshop/assets/59701387/a1b1ac8d-5723-422f-8233-8c580ca93f56)
 
    - No Argument:
 
-   ![noarg](https://github.com/binocroc/TCLWorkshop/assets/59701387/1e672b54-4457-49c4-900c-1a7232dbd8d6)
+   ![noarg](https://github.com/binocroc/TCLWorkshop/assets/59701387/3a78717a-037e-47c6-a38a-5ce81147f8f4)
 
    - Wrong/Non-existent Argument:
   
-   ![incorrarg](https://github.com/binocroc/TCLWorkshop/assets/59701387/09ea5b45-3630-4789-a7dd-701f92f197e2)
+   ![incorrarg](https://github.com/binocroc/TCLWorkshop/assets/59701387/4094eb49-1b87-4ab9-a419-e56c579aa9b1)
 
    - '-help' Argument:
   
-   ![helparg](https://github.com/binocroc/TCLWorkshop/assets/59701387/d410bf59-b5b5-4d0f-a5bd-f215aac2f675)
+   ![helparg](https://github.com/binocroc/TCLWorkshop/assets/59701387/c41b79ae-7944-4f13-9abc-6ac6d97af2fb)
 
 3. Source the UNIX shell to TCL script by passing the required .csv file:
 
