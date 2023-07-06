@@ -52,7 +52,7 @@ Sub-Task: Converting inputs to format[1] and feeding it to yosys for synthesis, 
 
 ![pic2](https://github.com/binocroc/TCLWorkshop/assets/59701387/303ee154-5cbd-40f2-b765-a16042301cca)
 
-3. Throw an Error out at the absence of directory/file at the mentioned path obtained:
+3. Throw an Error out at the absence of directory/file at the path obtained:
 
 ![pic3](https://github.com/binocroc/TCLWorkshop/assets/59701387/401b9e66-5694-40a6-b0f4-7e5a858d0d06)
 
