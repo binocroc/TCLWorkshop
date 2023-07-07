@@ -64,7 +64,7 @@ Sub-Task: Converting inputs to format[1] and feeding it to yosys for synthesis, 
 
 ## DAY-3
 
-Sub-Task: R
+Sub-Task: 
 
 
 
