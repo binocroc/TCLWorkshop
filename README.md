@@ -56,9 +56,15 @@ Sub-Task: Converting inputs to format[1] and feeding it to yosys for synthesis, 
 
 ![pic3](https://github.com/binocroc/TCLWorkshop/assets/59701387/401b9e66-5694-40a6-b0f4-7e5a858d0d06)
 
+4. Read the Constraint file and convert them into SDC file:
+   - Convert the constraint file into a matrix and define the SDC constraints
+  
+   - Categorization of each clocks, inputs and outputs features by porting their location in .csv file:
+  
+
 ## DAY-3
 
-Sub-Task: Read Constraints.csv file and convert to SDC format
+Sub-Task: R
 
 
 
