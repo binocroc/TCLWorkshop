@@ -73,8 +73,8 @@ Sub-Task: Read the Constraint file and Convert to SDC file
 
 ![img1](https://github.com/binocroc/TCLWorkshop/assets/59701387/42734e38-2ed8-46f4-82da-b026174749a5)
 
-   -Snap of SDC file with Clock Constraints
-   ![img2](https://github.com/binocroc/TCLWorkshop/assets/59701387/1cb74c78-ca13-44b7-a94a-8d2e783c5377)
+- Snap of SDC file with Clock Constraints:
+![img2](https://github.com/binocroc/TCLWorkshop/assets/59701387/1cb74c78-ca13-44b7-a94a-8d2e783c5377)
 
 
 
