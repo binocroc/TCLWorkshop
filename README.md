@@ -20,8 +20,10 @@ Sub-Task: Create a command (vsdsynth) and pass .csv file from UNIX Shell to TCL 
 
 1. Letting the system know that vsdsynth file is a shell script:
    
-    ```#!/bin/tcsh -f```
-2. Creating the Logo and if-else cases for each of three types of arguements:
+    ```
+   #!/bin/tcsh -f
+    ```
+3. Creating the Logo and if-else cases for each of three types of arguements:
    - LOGO:
      
    ![logo](https://github.com/binocroc/TCLWorkshop/assets/59701387/a1b1ac8d-5723-422f-8233-8c580ca93f56)
@@ -38,9 +40,11 @@ Sub-Task: Create a command (vsdsynth) and pass .csv file from UNIX Shell to TCL 
   
    ![helparg](https://github.com/binocroc/TCLWorkshop/assets/59701387/c41b79ae-7944-4f13-9abc-6ac6d97af2fb)
 
-3. Source the UNIX shell to TCL script by passing the required .csv file:
+4. Source the UNIX shell to TCL script by passing the required .csv file:
 
-   ```tclsh vsdsyntha.tcl $argv[1]```
+   ```
+   tclsh vsdsyntha.tcl $argv[1]
+   ```
 
 ## DAY-2
 
