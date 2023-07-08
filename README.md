@@ -10,6 +10,7 @@ Links to Navigate each day:
 1. [DAY-1](#DAY-1)
 2. [DAY-2](#DAY-2)
 3. [DAY-3](#DAY-3)
+4. [DAY-4](#DAY-4)
    
 
 ## DAY-1
@@ -42,7 +43,7 @@ Sub-Task: Create a command (vsdsynth) and pass .csv file from UNIX Shell to TCL 
 
 ## DAY-2
 
-Sub-Task: Converting inputs to format[1] and feeding it to yosys for synthesis, by creating variables and checking the existence of the directories
+Sub-Task: Converting inputs to format[1] and for feeding it to yosys for synthesis, by creating variables and checking the existence of the directories
 
 1. Creation of Variables:
 
@@ -75,6 +76,26 @@ Sub-Task: Read the Constraint file and Convert to SDC file
 
 - Snap of SDC file with Clock Constraints:
 ![img2](https://github.com/binocroc/TCLWorkshop/assets/59701387/1cb74c78-ca13-44b7-a94a-8d2e783c5377)
+
+2. Generation of Input constraints, and classifying each input port whether they are bussed or not:
+
+![Screenshot from 2023-07-08 12-26-49](https://github.com/binocroc/TCLWorkshop/assets/59701387/31218692-f8fe-4585-bffc-56ccbe284e96)
+
+- Snap of SDC file with Input Constraints post processing:
+  ![Screenshot from 2023-07-08 12-30-28](https://github.com/binocroc/TCLWorkshop/assets/59701387/1240a444-30ec-455f-bb66-52d100a3aa3d)
+
+## DAY-4
+
+Sub_Task: Obtain the final output constraints and feeding the SDC file, standard lib and RTL Netlist into the Yosys EDA tool for synthesizing
+
+1. Generation of Output Constraints:
+
+![Screenshot from 2023-07-08 13-08-50](https://github.com/binocroc/TCLWorkshop/assets/59701387/e04ad157-f0e9-4b81-abfb-f34a2f21cbd0)
+
+- Snap of SDC file with Output Constraints:
+![Screenshot from 2023-07-08 13-10-35](https://github.com/binocroc/TCLWorkshop/assets/59701387/01440e53-d0e2-4a42-ace7-c3da80322d4b)
+
+
 
 
 
