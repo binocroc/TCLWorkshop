@@ -106,7 +106,7 @@ Sub_Task: Obtain the final output constraints and feeding the SDC file, standard
 
 ## DAY-5
 
-Sub-Task: Converting to an opentimer compatible format (proc) from a Yosys-synthesized netlist.
+Sub-Task: Converting to an opentimer compatible format from a Yosys-synthesized netlist.
 
 
 
