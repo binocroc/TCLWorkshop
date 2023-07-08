@@ -11,6 +11,7 @@ Links to Navigate each day:
 2. [DAY-2](#DAY-2)
 3. [DAY-3](#DAY-3)
 4. [DAY-4](#DAY-4)
+5. [DAY-5](#DAY-5)
    
 
 ## DAY-1
@@ -94,6 +95,22 @@ Sub_Task: Obtain the final output constraints and feeding the SDC file, standard
 
 - Snap of SDC file with Output Constraints:
 ![Screenshot from 2023-07-08 13-10-35](https://github.com/binocroc/TCLWorkshop/assets/59701387/01440e53-d0e2-4a42-ace7-c3da80322d4b)
+
+2. Creation of Hierarchy Check script (.hier.ys) to assure proper instantiations of different modules in the top-module:
+
+![Screenshot from 2023-07-08 16-02-38](https://github.com/binocroc/TCLWorkshop/assets/59701387/953683cb-af8e-4c74-8f59-a362167113e4)
+
+3. Error Handling of Hierarchy Check script:
+
+![Screenshot from 2023-07-08 19-30-19](https://github.com/binocroc/TCLWorkshop/assets/59701387/226037f8-8f34-4093-9e2b-64a4cb30a2e2)
+
+## DAY-5
+
+Sub-Task: Converting to an opentimer compatible format (proc) from a Yosys-synthesized netlist.
+
+
+
+
 
 
 
