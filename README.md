@@ -1,6 +1,8 @@
 # **TCL Workshop**
 
  *Author: Srinivasa Yashwanth*
+ 
+ *_Acknowledgements: TCL Workshop by [Mr. Kunal Ghosh](https://github.com/kunalg123) , [VLSI System Design](https://www.vlsisystemdesign.com/)_*
 
  ## **Introduction**
 
@@ -12,6 +14,7 @@ Links to Navigate each day:
 3. [DAY-3](#DAY-3)
 4. [DAY-4](#DAY-4)
 5. [DAY-5](#DAY-5)
+6. [CONCLUSION](#CONCLUSION)
    
 
 ## DAY-1
@@ -111,6 +114,97 @@ Sub_Task: Obtain the final output constraints and feeding the SDC file, standard
 ## DAY-5
 
 Sub-Task: Converting to an opentimer compatible format from a Yosys-synthesized netlist.
+
+1. Creation of Synthesis Script (.ys) and running the synthesis script:
+
+![Screenshot from 2023-07-09 21-47-29](https://github.com/binocroc/TCLWorkshop/assets/59701387/58aa8d84-82b5-41c9-8996-7f8cb025b4a2)
+
+2. Conversion of synthesized file (.synth.v) to a format that Opentimer is compatible with:
+
+The primary reason of this conversion is that Opentimer can't identify or doesnt need few syntaxes that .synth.v is susceptible to contain. Such as "*" and "//". 
+So we have to process .synth.v file such that it no longer contains such symbols.
+
+```
+set fileID [open /tmp/1 "w"]
+puts -nonewline $fileID [exec grep -v -w "*" $OutputDirectory/$DesignName.synth.v]
+close $fileID
+
+set output [open $OutputDirectory/$DesignName.final.synth.v "w"]
+
+set filename "/tmp/1"
+set fid [open $filename r]
+	while {[gets $fid line] != -1} {
+		puts -nonewline $output [string map {"\\" ""} $line]
+		puts -nonewline $output "\n"
+	}
+close $fid
+close $output
+
+```
+ - using a temporary file in write mode to extract the information apart from the information that is involved with "*" as it is not required, and copy the content to the .final.synth.v file.
+ - open the .final.synth.v file in write mode and read the file till the end of the it ( [gets $fid line] != -1 ) to remove all the "//" symbols.
+ - Hence by making it a format compatible to Opentimer (.final.synth.v).
+   ![Screenshot from 2023-07-09 21-49-44](https://github.com/binocroc/TCLWorkshop/assets/59701387/e00f01c8-891c-4b56-ba3e-1ea19e15ca5f)
+
+ - A Snap of .final.synth.v vs .synth.v :
+   ![Screenshot from 2023-07-09 21-21-30](https://github.com/binocroc/TCLWorkshop/assets/59701387/78500e90-34c2-4bca-a7ce-9ea3df20cba8)
+
+3. Static timing analysis using Opentimer:
+
+- Usage of Procs:
+  what is a proc? The proc file system acts as an interface to internal data structures in the kernel. It can be used to obtain information about the system and to change    certain kernel parameters at runtime.
+
+  set_multi_cpu_usage proc:
+  
+  ![Screenshot from 2023-07-09 21-43-12](https://github.com/binocroc/TCLWorkshop/assets/59701387/7a4abe81-9476-4cb0-b4d5-baa4973f5052)
+
+  usage of read_sdc proc to obtain parameters from .sdc file:
+
+  ![Screenshot from 2023-07-09 21-59-04](https://github.com/binocroc/TCLWorkshop/assets/59701387/2c12c13c-b22b-4a24-beb7-c72e83bb2266)
+
+  Execution of Procs to obtain .conf file:
+  
+  ![Screenshot from 2023-07-09 22-01-24](https://github.com/binocroc/TCLWorkshop/assets/59701387/997f2b4f-976a-4c64-9c7b-9f9a5e3a30f9)
+  
+4. Creation of .conf and .spef file:
+ - .spef file:
+   ![Screenshot from 2023-07-09 22-50-54](https://github.com/binocroc/TCLWorkshop/assets/59701387/aa5a1a5d-919a-410e-9603-b25c1b0a524f)
+
+ - .conf file:
+   ![Screenshot from 2023-07-09 22-51-19](https://github.com/binocroc/TCLWorkshop/assets/59701387/8b1afd18-f662-4062-8b58-34e8307914aa)
+
+5. Quality of Results (QoR):
+
+ Quality of Results is a term used in evaluating technological processes. In this case, we have different parameters with respect to instances such as setup violations, hold violations, worst negative slack and Run-time to determing the Quality of Results.
+
+Display of Outputs after parameters are filed in .results file:
+
+![Screenshot from 2023-07-09 22-58-20](https://github.com/binocroc/TCLWorkshop/assets/59701387/e4b36ad9-b6e8-4c06-96ed-e2b13a5d52a0)
+
+6. Final Output of TCL Script:
+
+![Screenshot from 2023-07-09 23-11-54](https://github.com/binocroc/TCLWorkshop/assets/59701387/e9784899-7da1-4c8b-a886-e0e584621529)
+
+## CONCLUSION
+
+- Usage of basic TCL syntax, variables, control structures, and procedures has been understood.
+- Learned about various TCL commands and their functionalities. They explored commands for file handling, string manipulation, mathematical operations, and interacting  with the system.
+- Learned Linux based Procs and its application in TCL Scripting.
+- Learned effective scripting techniques using TCL and discovered techniques for error handling and debugging.
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
 
 
 
