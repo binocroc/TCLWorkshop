@@ -1,6 +1,8 @@
-# **TCL Workshop**
+# **TCL Workshop: From Introduction to Advanced Scripting Techniques in Design and Synthesis**
 
  *Author: Srinivasa Yashwanth*
+
+ *Mail: yashwathm09@gmail.com*
  
  *_Acknowledgements: TCL Workshop by [Mr. Kunal Ghosh](https://github.com/kunalg123) , [VLSI System Design](https://www.vlsisystemdesign.com/)_*
 
