@@ -190,7 +190,7 @@ Display of Outputs after parameters are filed in .results file:
 ## CONCLUSION
 
 - Usage of basic TCL syntax, variables, control structures, and procedures has been understood.
-- Learned about various TCL commands and their functionalities. They explored commands for file handling, string manipulation, mathematical operations, and interacting  with the system.
+- Learned about various TCL commands and their functionalities. Explored and Learned commands for file handling, string manipulation, mathematical operations, and interacting  with the system.
 - Learned Linux based Procs and its application in TCL Scripting.
 - Learned effective scripting techniques using TCL and discovered techniques for error handling and debugging.
 
