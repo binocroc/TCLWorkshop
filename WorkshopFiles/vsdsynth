@@ -1,0 +1,67 @@
+#!/bin/tcsh -f
+
+echo
+echo
+echo
+
+echo 				" 			......  ....  .. 		"
+echo 				"			......  ....  ..        	"
+echo 				" 			  ..    ..    ..      		"
+echo 				"			  ..    ....  ..... 		"
+echo 				" 			  ..    ....  ..... 		"
+echo 				"		      TCL Command by Yashwanth		"
+
+set my_work_dir = 'pwd'
+
+echo
+echo
+echo
+
+#........................................................................#
+#...........................Tool initializaton...........................#
+#........................................................................#
+
+if ($#argv != 1) then
+	echo 'Info: Please provide one arguement which is a csv file'
+	exit 1
+endif
+
+if (! -f $argv[1] || $argv[1] == "-help") then
+	
+	if 	($argv[1] != '-help') then 
+		echo "Error: Cannot find csv file $argv[1]. Exiting..."
+		exit 1
+		
+	else 
+		
+		echo USAGE: ./vdsynth \<csv file\>
+		echo
+		echo        where \<csv file\> consists of 2 columns, below keyboard being in 1st column and is Case Sensitive. Please request VSD team For sample csv file
+		echo
+		echo        \<Design Name\> is the name of top level module
+		echo
+		echo        \<Output Directory\> is the directory where synthesis scripts, netlists and timing reports are dumped
+
+		echo
+		echo        \<Netlist Directory\> is the directory where all RTL netlist are present
+
+		echo
+		echo        \<Early Library Path\> is the file path of the early cell library to be used For STA
+
+		echo
+		echo        \<Late Library Path\> is the file path of the late cell library to be used For STA
+		echo
+		echo        \<Constraints file\> is the csv file path of constraints to be used For STA
+		echo
+		echo        "Exiting.."
+
+		exit 1
+		
+	endif
+
+
+else
+		tclsh vsdsyntha.tcl $argv[1]
+endif
+
+	
